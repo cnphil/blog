@@ -77,7 +77,7 @@ postCtx =
 
 myFeedConfiguration :: FeedConfiguration
 myFeedConfiguration = FeedConfiguration
-    { feedTitle       = "Smelly Tofu: Phil Hu's blog"
+    { feedTitle       = "Smelly Tofu"
     , feedDescription = "Take a full bite of the glory and the dream."
     , feedAuthorName  = "Phil Hu"
     , feedAuthorEmail = "phil@cnphil.com"
