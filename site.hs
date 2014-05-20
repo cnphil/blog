@@ -24,6 +24,7 @@ main = hakyll $ do
     match "posts/**" $ do
         route $ (gsubRoute "posts/" (const "")) `composeRoutes` (setExtension "html")
         compile $ getResourceBody
+            >>= saveSnapshot "content"
             >>= loadAndApplyTemplate "templates/post.html"    postCtx
             >>= relativizeUrls
 
@@ -41,6 +42,13 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/default.html" archiveCtx
                 >>= relativizeUrls
 
+    create ["atom.xml"] $ do
+        route idRoute
+        compile $ do
+            let feedCtx = postCtx `mappend` bodyField "description"
+            posts <- fmap (take 10) . recentFirst =<<
+                loadAllSnapshots "posts/**" "content"
+            renderAtom myFeedConfiguration feedCtx posts
 
     match "index.html" $ do
         route idRoute
@@ -66,3 +74,12 @@ postCtx =
     dateField "entrydate" "%a %e %B %Y" `mappend`
     dateField "date" "%B %e, %Y" `mappend`
     defaultContext
+
+myFeedConfiguration :: FeedConfiguration
+myFeedConfiguration = FeedConfiguration
+    { feedTitle       = "Smelly Tofu: Phil Hu's blog"
+    , feedDescription = "Take a full bite of the glory and the dream."
+    , feedAuthorName  = "Phil Hu"
+    , feedAuthorEmail = "phil@cnphil.com"
+    , feedRoot        = "http://phil.tw"
+    }
