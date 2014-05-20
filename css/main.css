@@ -1,0 +1,567 @@
+/*
+    Based off of mnmlist by Mathieu Agopian
+    http://mathieu.agopian.info/mnmlist/theme.html
+    and blog.existentialize.com && plainasdave.com
+*/
+
+body {
+  background: #eee;
+  color: #333;
+  font: 16px 'Helvetica Neue', Helvetica, 'Hiragino Sans GB', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, Arial, bodyfont, sans-serif;
+  line-height: 30px;
+}
+
+@media (min-width: 769px) {
+    body {
+        max-width: 600px;
+        /* originally 46% */
+        margin: 60px auto 0;
+        /* originally 60px 27% 0 */
+    }        
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    body {
+        max-width: 480px;
+        margin: 60px auto 0;
+    }        
+} 
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    body {
+        max-width: 600px;
+        margin: 60px auto 0;
+    }        
+} 
+
+@media (max-width: 480px) {
+    body {
+        max-width: 90%;
+        margin: 60px auto 0;
+    }        
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    body {
+        max-width: 92%;
+        margin: 60px auto 0;
+        font-size: 14px;
+        line-height: 180%;
+    }        
+}
+
+hr {
+  width: 60%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-style: none;
+  border-top-width: 0px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  height: 1px;
+  line-height: 24px;
+  background-color: rgb(204, 204, 204);
+  border-top-color: rgb(203, 203, 203);
+  border-right-color: rgb(203, 203, 203);
+  border-bottom-color: rgb(203, 203, 203);
+  border-left-color: rgb(203, 203, 203);
+  color: rgb(203, 203, 203); 
+}
+
+div#site-title-box {
+    text-align: center;
+}
+
+div#site-title-box img {
+    height: 32px;
+}
+
+.site-title {
+    font-family: "Lato", HelveticaNeue-UltraLight, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 54px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    color: #333;
+}
+
+.site-title:hover {
+    color: #333;
+}
+
+#index-title-box {
+    font-family: helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 200;
+    line-height: 54px;
+    text-align: center;
+    text-decoration: none;
+    -webkit-user-select: none;
+    color: #333;
+}    
+
+@media (max-width : 568px) {
+    #index-title-box {
+        font-size: 28px;
+    }
+}
+
+article {
+    overflow: visible;
+}
+
+figure, figcaption {
+    text-align: center;
+}
+
+figure {
+    margin: 40px 0 40px 0;
+}
+
+@media (min-width: 769px) {
+    figure.image-large {
+        margin-left: -60px;
+        width: 720px;
+    }
+
+    figure.image-large img {
+        width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    figure.image-large {
+        width: 100%;
+    }
+
+    figure.image-large img {
+        max-width: 94%;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+figure.image-no-zoom {
+    width: 100%;
+}
+
+figure.image-no-zoom img {
+    max-width: 94%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+figcaption {
+    color: rgb(122, 122, 122);
+    margin-top: -5px;
+    line-height: 110%;
+    font-size: 12px;
+    font-family: "Helvetica Neue", helvetica, 'STHeitiTC-Medium', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+}
+
+figcaption a {
+    color: rgb(122, 122, 122);
+    border-bottom: 0px;
+}    
+
+h1 {
+  color: #333333;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, 'STHeitiTC-Medium', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+h2 {
+  color: #666666;
+  font-family: Helvetica, 'Hiragino Sans GB', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+  font-size: 1.3em;
+}
+
+h3 {
+  color: #666666;
+  font-family: Helvetica, 'Hiragino Sans GB', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+  font-size: 1em;
+}
+
+h4 {
+  color: #666666;
+  font-family: Helvetica, 'Hiragino Sans GB', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+  font-size: 0.9em;
+}
+
+time {
+  color: #c0c0c0;
+  font-size: 50%;
+  height: 100%;
+  text-align: left;
+  padding-bottom: 0px;
+  float: left;
+  margin-left: 2px;
+}
+
+img {
+  border: none;
+  margin: 0 auto;
+}
+
+blockquote {
+  border-left: 1px solid #A5ABAB;
+  margin: 0px;
+  padding: 0 12px 0 12px;
+}
+
+p {
+  /*line-height: 30px;*/
+  margin: 30px auto;
+  text-indent: 0px;
+}
+
+p.caption {
+  font-size: 80%;
+  margin-top: 0;
+}
+
+a {
+  border-bottom: #999 1px solid;
+  color: #303030;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #999;
+}
+
+/* table of contents */
+div.toc {
+  text-align: left;
+  padding: 0;
+}
+
+ul, ol {
+  padding: .5em 0em 1em 3.2em;
+}
+
+ul li, ol li {
+  line-height: 20px;
+  padding: 3px 0 0 0;
+}
+
+strong {
+  color: #555555;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+
+tt, pre {
+  background-color: #fafafa;
+  font-family: Inconsolata, Monaco, monospace;
+  line-height: 1.2em;
+}
+
+pre {
+  font-size: 0.8em;
+  overflow: auto;
+  padding: 10px;
+}
+
+header {
+  padding-bottom: 20px;
+}
+
+header a {
+  border-bottom: none;
+}
+
+header a#page-title {
+  font-weight: bold;
+}
+
+span.category {
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-size: 50%;
+    letter-spacing: 2px;
+    color #c0c0c0;
+    padding-bottom: 0px;
+    float:right;
+}
+
+span.author {
+    text-align: right;
+    font-family: Helvetica, 'Hiragino Sans GB', 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;
+    font-size: 50%;
+    color #c0c0c0;
+    padding-bottom: 0px;
+    float:right;
+}
+
+.author-name {
+    text-transform: uppercase;
+}
+
+/*Comments*/
+span.c1, span.cm {
+    color: darkgreen;
+}
+
+/* conditionals */
+span.k, span.kt {
+    color: darkred;
+}
+
+span.kd {
+    color: purple;
+}
+
+span.nc, span.cp {
+    color: chocolate;
+}
+
+span.nd {
+    color: darkgoldenrod;
+}
+
+span.nf {
+    color: rgb(5, 64, 128);
+}
+
+span.s {
+    color: darkgreen;
+}
+
+#article-list {
+  margin-top: 100px;
+}
+
+#article-list ol li {
+  line-height: 1.2em;
+  list-style-type: none;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+article ol li {
+  line-height: 1.2em;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+article p {
+  text-align: justify;
+}
+
+footer {
+  background: #eee;
+  color: #666;
+  font-family: helvetica, sans-serif;
+  font-size: 13px;
+  letter-spacing: 4px;
+}
+
+footer a {
+  border-bottom: none;
+  color: #c0c0c0;
+}
+
+footer li {
+  display: inline;
+}
+
+footer p {
+  text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    padding-bottom: 65px;
+    letter-spacing: 0px;
+    font-size: 9px;
+}
+
+nav {
+  color: #666;
+  font-family: helvetica, sans-serif;
+  font-size: 15px;
+  letter-spacing: 4px;
+}
+
+nav p {
+    font-size: 17px;
+    text-align: center;
+    line-height: 15px;
+}
+
+nav ul.footer, li.footer {
+    padding: 0 0 0 0;
+    text-align: center;
+    line-height: 15px;
+}
+
+nav li.footer {
+    margin: 0 2% 0 2%;
+}
+
+nav ul.related, li.related {
+    padding: 0px;
+    list-style: none;
+    text-align: center;
+}
+
+ul.tags {
+    list-style: none;
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+li.tags {
+    padding: 1px;
+    display: inline;
+    text-align: center;
+}
+
+.alignright {
+    margin-left:auto;
+    margin-right:0px;
+    text-align:right;
+}
+
+cite {
+  font-style: normal;
+}
+
+cite:before {
+  content: "— ";
+}
+
+cite.character:before {
+  content: "";
+}
+
+cite.character {
+    display: block;
+    padding-top: 15px;
+    font-style: italic;
+}
+
+.arrow-n,
+.arrow-e,
+.arrow-s,
+.arrow-w {
+  /*
+   * In Internet Explorer, The"border-style: dashed" will never be
+   * rendered unless "(width * 5) >= border-width" is true.
+   * Since "width" is set to "0", the "dashed-border" remains
+   * invisible to the user, which renders the border just like how
+   * "border-color: transparent" renders.
+   */
+  border-style: dashed;
+  border-color: transparent;
+  border-width: 0.53em;
+  display: -moz-inline-box;
+  display: inline-block;
+  /* Use font-size to control the size of the arrow. */
+  font-size: 100px;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: middle;
+  width: 0;
+}
+
+.arrow-n {
+  border-bottom-width: 1em;
+  border-bottom-style: solid;
+  border-bottom-color: #666;
+  bottom: 0.25em;
+}
+
+.arrow-e {
+  border-left-width: 1em;
+  border-left-style: solid;
+  border-left-color: #666;
+  left: 0.25em;
+}
+                    
+.arrow-s {
+  border-top-width: 1em;
+  border-top-style: solid;
+  border-top-color: #666;
+  top: 0.25em;
+}
+
+.arrow-w {
+  border-right-width: 1em;
+  border-right-style: solid;
+  border-right-color: #666;
+  right: 0.25em;
+}
+
+div.content-wrapper {
+    width: 100%;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, 'STHeitiTC-Medium', "WenQuanYi Zen Hei", 微軟正黑體, 'Microsoft JhengHei', 微软正黑体, 'Microsoft YaHei', 微软雅黑, sans-serif;    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    overflow: auto;
+}
+
+div.entries, div.entry {
+    overflow: auto;
+}
+
+@media (min-width : 569px) { 
+    div.entry-date {
+        width: 40%;
+        float: left;
+        text-align: right;
+        color: rgb(160, 160, 160);
+        font-family: 'Roboto';
+        font-weight: 300;
+        line-height: 40px;
+    }
+
+    div.entry-title {
+        width: 52%;
+        float: right;
+        text-align: left;
+        line-height: 40px;
+        font-size: 1.2em;
+        margin-left: 8%;
+    }
+}
+
+@media (max-width : 568px) { 
+    div.entry-date {
+        width: 100%;
+        float: none;
+        text-align: center;
+        color: rgb(160, 160, 160);
+        font-family: 'Roboto';
+        font-weight: 300;
+        line-height: 150%;
+        font-size: 10px;
+        padding-bottom: 20px;
+    }
+
+    div.entry-title {
+        width: 100%;
+        float: none;
+        text-align: center;
+        line-height: 150%;
+        font-size: 1.2em;
+        margin-left: 0px;
+    }
+
+    div.entry-title > a {
+        text-decoration: none;
+        border-bottom-width: 0px;
+    }
+}
+
