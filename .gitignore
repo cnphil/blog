@@ -3,4 +3,6 @@ site.o
 site.hi
 _cache
 _site
+.cabal-sandbox
+cabal.sandbox.config
 

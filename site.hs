@@ -78,8 +78,8 @@ postCtx =
 myFeedConfiguration :: FeedConfiguration
 myFeedConfiguration = FeedConfiguration
     { feedTitle       = "Smelly Tofu"
-    , feedDescription = "Take a full bite of the glory and the dream."
-    , feedAuthorName  = "Phil Hu"
+    , feedDescription = ""
+    , feedAuthorName  = "Phil Xiaojun Hu"
     , feedAuthorEmail = "phil@cnphil.com"
-    , feedRoot        = "http://phil.tw"
+    , feedRoot        = "https://blog.phil.tw"
     }
