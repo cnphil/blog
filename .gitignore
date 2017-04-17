@@ -5,4 +5,5 @@ _cache
 _site
 .cabal-sandbox
 cabal.sandbox.config
+.stack-work
 
