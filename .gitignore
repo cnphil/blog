@@ -5,4 +5,4 @@ _cache
 .cabal-sandbox
 cabal.sandbox.config
 .stack-work
-
+sensitive_variables
